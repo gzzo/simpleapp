@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Test webhook!!!")
+st.title("Testing webhook!")
 
 value = st.slider("Pick a number", 0, 10, 3)
 
