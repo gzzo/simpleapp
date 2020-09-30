@@ -1,11 +1,12 @@
 import streamlit as st
+import os
 
 st.title("almost september!")
 
 value = st.slider("Pick a number", 0, 10, 3)
 
 st.write(value)
-
+st.json(dict(os.environ))
 input = st.text_input("Tell me something", "Cantami o Diva")
 
 with open("temp_file.txt", "a") as f:
