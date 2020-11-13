@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("main app")
+st.title("main app 2")
 
 value = st.slider("Pick a number", 0, 10, 3)
 
