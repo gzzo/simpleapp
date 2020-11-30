@@ -5,27 +5,9 @@ time.sleep(10)
 import streamlit as st
 import os
 
-st.title("almost thanksgiving")
+st.title("your secret")
 
-value = st.slider("Pick a number", 0, 10, 3)
+with open("../secrets/secrets.toml") as f:
+  st.text(f.read())
 
-st.write(value)
 st.json(dict(os.environ))
-input = st.text_input("Tell me something", "Cantami o Diva")
-
-with open("temp_file.txt", "a") as f:
-  f.write(f"{input}\n")
-  
-with open("temp_file.txt", "r") as f:
-  st.write(f.read())
-
-st.write("Streamlit is fabulous")
-
-st.write("Hello Corey, this is the demo!")
-st.balloons()
-
-print("this is a log line")
-
-uploaded_file = st.file_uploader("Choose a Jpg file", type="jpg")
-if uploaded_file is not None:
-    st.write(uploaded_file)
