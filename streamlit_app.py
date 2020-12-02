@@ -7,9 +7,7 @@ import os
 
 st.title("your secret")
 
-st.text(os.getcwd())
-
-with open("../secrets/secrets.toml") as f:
+with open("../secrets/secret.toml") as f:
   st.text(f.read())
 
 st.json(dict(os.environ))
