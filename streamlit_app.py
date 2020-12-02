@@ -7,6 +7,8 @@ import os
 
 st.title("your secret")
 
+st.text(os.getcwd())
+
 with open("../secrets/secrets.toml") as f:
   st.text(f.read())
 
