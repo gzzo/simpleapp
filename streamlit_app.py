@@ -8,8 +8,8 @@ import os.path
 
 st.title("your secret")
 
-st.text(os.getcwd())
-st.text(os.path.expanduser('~'))
+#st.text(os.getcwd())
+#st.text(os.path.expanduser('~'))
 
 with open(".streamlit/secrets.toml") as f:
   st.text(f.read())
