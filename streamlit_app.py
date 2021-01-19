@@ -8,7 +8,7 @@ import os.path
 import secrets_helper
 
 a = {}
-print(a['secret_key'])
+print(a[st.secrets['secret_key']])
 
 st.title("your secret")
 
