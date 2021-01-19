@@ -5,6 +5,10 @@ time.sleep(10)
 import streamlit as st
 import os
 import os.path
+import secrets_helper
+
+a = {}
+print(a['secret_key'])
 
 st.title("your secret")
 
