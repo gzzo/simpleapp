@@ -7,9 +7,6 @@ import os
 import os.path
 import secrets_helper
 
-a = {}
-print(a[st.secrets['secret_key']])
-
 st.title("your secret")
 
 with open(".streamlit/secrets.toml") as f:
