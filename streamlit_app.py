@@ -12,9 +12,6 @@ print(a[st.secrets['secret_key']])
 
 st.title("your secret")
 
-#st.text(os.getcwd())
-#st.text(os.path.expanduser('~'))
-
 with open(".streamlit/secrets.toml") as f:
   st.text(f.read())
 
